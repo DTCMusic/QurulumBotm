@@ -107,7 +107,7 @@ async def husu(bot, msg):
     await client.disconnect()
     await msg.reply("(✓) StringSession alındı!")
 
-    appname = "fastuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "karabakhuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         heroku_conn.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -135,8 +135,8 @@ async def husu(bot, msg):
     app.install_addon(plan_id_or_name='062a1cc7-f79f-404c-9f91-135f70175577', config={})
     config = app.config()
 
-    config['API_HASH'] = "ef4d6e4de6f924085a01988b1bc751f0"
-    config['API_KEY'] = 17202681
+    config['API_HASH'] = "36e3686358ae38f722dce5c7d5b59902"
+    config['API_KEY'] = 15283231
     config['BOTLOG'] = "True"
     config['BOTLOG_CHATID'] = Qrup
     config['COUNTRY'] = "Azerbaijan"
